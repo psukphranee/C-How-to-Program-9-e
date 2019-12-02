@@ -1,0 +1,28 @@
+Top:
+Analyze exam results and decide whether a bonus should be paid
+
+Refinement 1:
+1) Initialize program variables
+2) Input the 10 exam results, count passes and failure
+3) Display a summary of the exam results and decide whether a bonus should be paid
+
+set pass counter to zero
+set no-pass counter to zero
+set student counter to 1
+
+while counter is less than or equal to 10
+  prompt the user for an exam result
+  input the next exam result
+
+  if the student passed
+    increment pass counter
+  else
+    increment no-pass counter
+
+  add one to student counter
+
+display number of passes
+display number of no-passes
+
+if more than eight students passed
+  Display "Bonus to instructor!"
