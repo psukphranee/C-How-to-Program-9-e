@@ -1,0 +1,52 @@
+Top: Calculate customers' new balance and determine if they're over their limit
+
+Refinement 1:
+Initialize variables
+Input customers information and transactions
+Calculate the customers new balance and determine if their credit limit is exceeded
+
+Refinement 2:
+Initialize account number to zero
+Initialize beginning balance to zero
+Initialize new charges to zero
+Initialize credits applied to zero
+
+Prompt the user for an account number
+Input an account number
+While the user hasn't entered a sentinel value
+    prompt the user for the beginning balance
+    input the users beginning balance
+    prompt the user for total charges
+    input the total charges
+    prompt the user for total credits
+    input the total credits
+    prompt the user for the credit limit
+    input the credit limit
+
+    calculate the new balance
+
+    if the new balance is greater than the credit limit
+        display account number
+        display credit limit
+        display new balance
+        display "Credit Limit Exceeded."
+    else
+        displace the new balance
+
+    Prompt the user for an account number
+    Input an account number
+
+Refinement 3:
+    ...
+    if the new balance is greater than the credit limit
+        display account number
+        set display precision to 2
+        display credit limit
+        display new balance
+        set display precision to 0
+        display "Credit Limit Exceeded."
+    else
+        set display precision to 2
+        displace the new balance
+        set display precivsion to 0        
+    ...

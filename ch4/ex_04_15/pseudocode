@@ -1,0 +1,35 @@
+Top:
+Calculate each salespersons earning based on the previous weeks gross sales
+
+Refinement 1:
+Initialize variables
+Input sales amount
+Add 9% of sales amount to base pay and display the result
+
+Refinement 2:
+Initialize sales amount to zero
+
+prompt the user for a sales amount
+enter the sales amount
+
+While a sentinel value isn't entered
+    Initialize salary to zero
+    Calculate 9% of that and add it to the salary
+    display the salary
+
+    prompt the user for the next sales amount
+    input the sales amount
+
+Refinement 3:
+Initialize the sales amount to zero
+Prompt the user for a sales amount, reminding -1 is the sentinel value
+Enter the sales amount
+
+While a sentinel value isn't entered
+    Initialize salary to zero
+    Calculate 9% of that and add it to the salary
+    set output precision to 2 and fixed
+    display the salary with a dollar symbol
+
+    display a linebreak and prompt the user for the next sales amount
+    input the sales amount

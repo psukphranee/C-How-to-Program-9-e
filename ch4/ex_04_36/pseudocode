@@ -1,0 +1,50 @@
+Top: Create an encryption program that takes in 4 digit integers
+******
+RF1:
+-init vars
+-prompt & input 4 digit number; separate them into digits for processing
+-encrypt and display encrypted message
+******
+RF2:
+Init input to zero
+Init digit1 to zero
+....
+init digit 4 to zero
+
+Prompt user to enter 4 digit number
+Input 4-digit number
+
+set digit1 to left-most,..., set digit4 to rightmost
+add 7 to each and mod by 10
+
+swap 1 & 3
+swap 2 & 4
+
+reassembly and display
+******
+RF3:
+Init input to 0
+Init digit1 to 0
+Init digit2 to 0
+Init digit3 to 0
+Init digit4 to 0
+Init temp to 0
+init output to 0
+
+prompt user for message
+cin message into input
+
+Set digit1 to (message / 10^1) * 10^1
+Set digit2 to (message / 10^2) * 10^2
+...
+Set digit4 to (message / 10^4) * 10^4
+
+digit_i += digit_i + 7 mod 10
+...
+
+temp equals digit 1
+digit 1 equals digit 3
+digit 3 equals temp
+... do same thing for 2 & 4
+
+output = digit_i * 10^(i-1)

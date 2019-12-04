@@ -1,0 +1,56 @@
+Top:
+Draw a hollow box of arbitrary size bordered using asterisks
+
+RF1:
+Init vars
+Input box size
+Draw box line by line
+
+RF2:
+Init box size to zero
+Init counter to one
+
+Prompt user for a box size
+Input a box size
+
+While the counter is less than or equal to the box size
+    print each line
+
+RF3:
+Init box size to zero
+Init outer_counter to one
+
+Prompt user for a box size
+Input a box size
+
+While the outer_counter is less than or equal to the box size
+    print an asterisk
+
+    init inner_counter to 2
+    while inner_counter is less than or equal to (box_size - 1)
+        print a '*' if the outer_counter is the first line or last line
+        otherwise print a ' '
+
+RF4:
+Init box_size to zero
+Init outer_counter to one
+
+Prompt user for a box_size
+Input a box size
+
+While the outer_counter is less than or equal to the box size
+
+    print the left edge asterisk
+
+    init inner_counter to 2
+    while inner_counter is less than or equal to (box_size - 1)
+        if the outer_counter is equal to 1 or box_size
+            print a '*'
+        else
+            print a ' '
+
+        add one to the inner counter
+
+     print the right edge asterisk
+     goto a new line
+     add one to the outer counter

@@ -1,0 +1,33 @@
+Top: find the greatest of 10 numbers
+
+Refinement 1:
+Init vars
+input 10 numbers
+determing the largest and print
+
+Ref 2:
+Init counter to one
+init number to zero
+init largest number to zero
+
+while counter less than or equal to 10
+    prompt for a number
+    input the number
+    set it as the largest if its bigger than the largest
+
+display the largest
+
+Ref 3:
+init counter to one
+init number to zero
+init largest to zero
+
+while counter is less than or equal to ten
+    prompt the user for a number
+    input the number
+
+    if the number is greater than the largest
+        set largest to number
+
+    increment counter
+display a newline and the largest number

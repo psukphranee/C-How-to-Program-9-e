@@ -1,0 +1,49 @@
+Top:
+Calculate employees salary based on hours work.
+
+Pay is 1x for first 40 hours and 1.5x for the remaining hours
+--------
+First Refinement:
+Initialize variables
+Input the hours worked and hourly rate
+Calculate salary based on pay rate schedule and display the salary
+--------
+Second Refinement:
+Initialize
+    -hours worked to zero
+    -hourly rate to zero
+
+Prompt the user for hours worked
+Input the hours worked
+While input isn't the sentinel value
+    prompt user for hourly rate
+    input hourly rate
+
+    Calculate salary
+    Display salary
+
+    Prompt the user for next hours worked
+--------
+Third Refinement:
+Initialize
+    -hours worked to zero
+    -hourly rate to zero
+
+Prompt the user for hours worked
+Input the hours worked
+While input (converted to integer) isn't the sentinel value
+
+    prompt user for hourly rate
+    input hourly rate
+
+    if hours worked is less than equal to 40
+        set salary to hours worked times hourly rate
+    else
+        set remainder to hours worked minus 40
+        set salary to 40 times hourly rate plus remain times 1.5 times hourly rate
+
+    set precision to 2 and fixed
+    Display salary
+
+    output newline
+    Prompt the user for next hours worked

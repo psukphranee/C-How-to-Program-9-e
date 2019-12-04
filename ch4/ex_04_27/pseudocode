@@ -1,0 +1,65 @@
+Top: Convert a binary input to decimal
+
+RF1:
+1. Init vars
+2. Input binary
+3. Convert binary to dec and display
+
+RF2:
+1. Init power counter to zero
+   init binary_number to zero
+   init temp_number to zero
+
+2. Prompt user for binary number
+   input binary number
+   copy the binary number to temp number
+
+3. take the digits from right to left, multiply it by a correspond power of 2
+and sum it
+
+4. display the sum
+
+RF3:
+
+1. Init power counter to zero
+   init binary_number to zero
+   init temp_number to zero
+
+2. Prompt user for binary number
+   input binary number
+   copy the binary number to temp number
+
+3. Using the temp_number,
+   while the temp_number is greater than zero
+    take the right most digit
+    multiply it by 2 to the power of counter and add it to the running sum
+    increment the counter
+    delete the right most digit of temp_number
+
+4. Print the original binary
+    print a new line
+    print the decimal conversion
+
+RF4:
+1. Init power_counter to zero
+   init binary_number to zero
+   init temp_number to zero
+   init running_sum to zero
+
+2. Prompt user for binary number
+   input binary number
+   copy the binary number to temp number
+
+3. Using the temp_number,
+   while the temp_number is greater than zero
+    init current_digit to zero
+
+    //take the right most digit
+    set current_digit to temp_number - [(temp_number / 10) * 10]
+    multiply it by 2 to the power of counter and add it to the running sum
+    increment the counter
+    delete the right most digit of temp_number
+
+4. Print the original binary
+    print a new line
+    print the decimal conversion
