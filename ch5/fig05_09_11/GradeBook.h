@@ -10,9 +10,9 @@ public:
     void inputGrades();
 private:
     std:string courseName;
-    unsigned int aGrade;
-    unsigned int bGrade;
-    unsigned int cGrade;
-    unsigned int dGrade;
-    unsigned int fGrade;
+    unsigned int aCount;
+    unsigned int bCount;
+    unsigned int cCount;
+    unsigned int dCount;
+    unsigned int fCount;
 }
