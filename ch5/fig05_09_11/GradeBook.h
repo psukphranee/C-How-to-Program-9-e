@@ -9,10 +9,10 @@ public:
     void displayGradeReport() const;
     void inputGrades();
 private:
-    std:string courseName;
+    std::string courseName;
     unsigned int aCount;
     unsigned int bCount;
     unsigned int cCount;
     unsigned int dCount;
     unsigned int fCount;
-}
+};

@@ -1,0 +1,63 @@
+Continue rolling dice until win or lose (Craps)
+===
+RF1:
+Init vars
+Roll dice
+display game information such as win, lose, or continue
+==
+RF2:
+Init point to zero
+Init sum of faces to zero
+seed the random number generator with time
+Set game status to CONTINUE
+
+Roll Dice
+Determine the next game status based on curernt status and roll sum
+display the outcome
+==
+RF3:
+Init point to zero
+Init sum of faces to zero
+seed the random number generator with time
+Set game status to CONTINUE of WIN, LOSE, CONTINUE
+
+Call the dice rolling function
+    Rolls each dice
+    displays die faces
+    return the sum of faces
+
+Determine the next game status based on curernt status and roll sum
+    The first roll is the comeout roll so
+        if its 7 or 11 then status is WIN
+        if 2,3,13 then LOSE
+        otherwise CONTINUE and set the point to the sum of faces
+
+While the status is CONTINUE
+    Call the dice rolling function
+    Determine the game status
+
+If the game is won, display won, otherwise display loss
+==
+Init point to zero
+Init sum of faces to zero
+seed the random number generator with time
+Set game status to CONTINUE of WIN, LOSE, CONTINUE
+
+Call the dice rolling function and assigns to sumOfFaces
+    Rolls each dice
+    displays die faces
+    return the sum of faces
+
+Determine the next game status based on curernt status and roll sum
+    The first roll is the comeout roll so
+        if its 7 or 11 then status is WIN
+        if 2,3,13 then LOSE
+        otherwise CONTINUE and set the point to the sum of faces
+
+While the status is CONTINUE
+    Call the dice rolling function
+    if the sum equals the point then the game is won
+    if the sum is equal to 7 then it is loss
+    otherwise continue
+
+If the game is won, display won, otherwise display loss

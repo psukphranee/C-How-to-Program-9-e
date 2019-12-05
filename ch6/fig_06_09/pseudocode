@@ -1,0 +1,44 @@
+Display frequency of 6 million dice rolls
+--
+Init vars
+Roll dice 6 million times, count each face
+display the result of each occurence
+--
+Set freq1 to zero
+Set freq2 to zero
+Set freq3 to zero
+Set freq4 to zero
+Set freq5 to zero
+Set freq6 to zero
+
+set roll counter to 1
+while dice roll is less than or equal to 6 million
+    roll dice
+    increment roll counter
+    increment the corresponding counter
+
+display a table headed by "Face" and "Frequency" ("Frequency padded in 13 spaces")
+--
+Set freq1 to zero
+Set freq2 to zero
+Set freq3 to zero
+Set freq4 to zero
+Set freq5 to zero
+Set freq6 to zero
+
+set roll counter to 1
+while dice roll is less than or equal to 6 million
+    roll dice
+    increment roll counter
+
+    if face is 1, increment freq1 else
+    if face is 2, increment freq2 else
+    if face is 3, increment freq3 else
+    if face is 4, increment freq4 else
+    if face is 5, increment freq5 else
+    if face is 6, increment freq6
+
+display the header "Face" and "Frequency", padded 13
+display "1" and freq1 padded by 13
+...
+display "6" and freq6 padded by 13
