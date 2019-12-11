@@ -1,0 +1,15 @@
+4 Parameters:
+-Number of disks to be moved
+-Initial peg
+-Destination peg
+-Buffer peg
+
+For recursion, test for the base case. Otherwise, do a recursive call.
+
+If the number of disks is 1, then move the disk from the initial peg to the destination peg
+Otherwise call the move function to move k-1 pegs to the buffer peg, then move the k-th peg to
+the destination peg.
+
+=====
+If the number of disks to move is one, then display an arrow from the initial_peg to the destination_peg
+Otherwise, move k-1 disks from the initial_peg to the buffer_peg. Then move disk k from the initial_peg to the destination_peg.

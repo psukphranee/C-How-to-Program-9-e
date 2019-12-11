@@ -1,0 +1,14 @@
+init vars
+create a grade book
+display the grades and stats
+===
+initialize an array of grades to a fixed size
+create a grade book for "CS101 C++ Programming" using the grades just created
+display a welcome message
+display the grade book's stats
+===
+using a fixed size defined in the class GradeBook, create an array of grades
+  87,68,94,100,83,78,85,91,76,87
+create a GradeBook object, passing "CS101 C++ Programming" and the grades above to the constructor
+call the objects welcome message
+call the objects function to display stats

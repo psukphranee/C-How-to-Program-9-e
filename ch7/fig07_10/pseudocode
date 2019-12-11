@@ -1,0 +1,20 @@
+Initialize variables
+Roll one dice 6 million times and count it
+display a tabular report
+===
+Initialize the arraySize to a constant value of 7.
+Initialize the array of counts to all zeros. This array is of type unsigned int
+Initialize a random engine, using time as a seed
+Initialze a uniform integer distribution over interval 1 to 6.
+
+Initialze a counter to 1
+while the counter is less than or equal to 6 million
+  increment the element number corresponding to the face value of the dice
+  increment the counter
+
+display the header consisting of "Face"  and "Frequency"
+Initialize a counter to 1
+while the counter is less than the array size
+  display the counter number (equivalent to face value), padded 4
+  display the count of the face number, padded 13
+  goto a new line

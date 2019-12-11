@@ -1,0 +1,54 @@
+init vars
+enter a wager, play game
+adjust balance and display balance with message
+===
+set game status to continue
+set point to zero
+set sum of dice to zero
+
+prompt the user for a wager
+input wager, asking to reinput the wager if its beyond the players balance
+run the craps game
+
+if the player losses, decrease their balance by the wager amount
+otherwise, increase their balance by the wager amount
+===
+create an enumeration type for the game status, CONTINUE/WIN/LOSE
+set the game status to CONTINUE
+set the point to zero, since its the come out roll
+set the dice sum to zero since the die have not been rolled
+set the users balance to 1000 dollars
+set wager amount to zero
+
+while the wager amount is equal to EOF
+  display the users balance and prompt for a wager
+  input a wager amount
+  while the wager amount is greater than the players balance,
+    notify the player that they don't have enough money
+    promt for a wager amount
+    input wager amount
+
+  play the craps game
+
+  if the game status is win then increase the players balance by wager amount
+  otherwise decrease the players balance by wager amount
+===
+create an enumeration type for the game status, CONTINUE/WIN/LOSE
+set the game status to CONTINUE
+set the point to zero, since its the come out roll
+set the dice sum to zero since the die have not been rolled
+set the users balance to 1000 dollars
+set wager amount to zero
+
+  while the wager amount is not equal to the sentinel value
+    display the users balance and prompt for a wager
+    input a wager amount
+    while the wager amount is greater than the players balance,
+      notify the player that they don't have enough money
+      promt for a wager amount
+      input wager amount
+
+    play the craps game
+
+if the game status is win then increase the players balance by wager amount
+otherwise decrease the players balance by wager amount

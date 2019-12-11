@@ -1,0 +1,17 @@
+
+GradeBook class
+
+public members/functions
+  grade book size, shared amongst all instances and is constant
+  constructor that takes class name and array
+  function to display welcome message
+  function to find average
+  function to find highest grade
+  function to find lowest grade
+  function to get course name
+  function to set course name
+  function to display stats
+
+private members/functions
+  course name
+  array of grades

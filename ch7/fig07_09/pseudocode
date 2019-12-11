@@ -1,0 +1,41 @@
+initialize array to 11 elements
+loop through each elements
+  print the grade interval
+    print the number of counts
+===
+initialize gradeDist to an array of 11 integers
+
+set the counter to zero
+while the counter is less than the size of the array
+  if the counter is zero then display "  0-9:"
+  otherwise if the counter is 10, then display "  100:"
+  otherwise display 10 times the counter, a hyphen, and 10 times the counter plus 9
+
+  set a different counter to zero
+  while the counter is less than or equal to the array at the counters' element value
+    display *
+    increment this counter
+  make a new line
+
+  increment outter counter
+  display a newline
+===
+set the arraySize variable to 11 (type size_t)
+initialize gradeDist to an array of arraySize, integers
+
+display heading
+
+set i to zero
+while the i is less than gradeDist's size
+  if i is zero then display "  0-9:"
+  otherwise if i is 10, then display "  100:"
+  otherwise display 10i, a hyphen, and 10i+9
+
+  set a j to zero
+  while the j is less than or equal to the array at the gradeDist[i]
+    display *
+    increment j
+  make a new line
+
+  increment i
+  display a newline

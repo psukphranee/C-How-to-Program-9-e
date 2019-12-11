@@ -1,0 +1,45 @@
+init vars
+roll dice, set point if applicable, set game Status
+display information
+
+==
+set point to zero
+set dice sum to zero
+set gameStatus to CONTINUE
+
+roll dice and assign sum
+set point to die Sum
+while game status is continue
+  keep rolling until win or LOSE
+==
+set point to zero
+set dice sum to zero
+set gameStatus to CONTINUE
+
+roll dice and assign sum
+set point to die Sum
+determine if win or lose on come out rolled
+  returning if either
+
+while game status is continue
+  roll dice and assign to Sum
+  if sum is point then set WIN status
+  else if sum is 7 set LOSE status
+  else status is CONTINUE
+==
+set point to zero
+set dice sum to zero
+set gameStatus to CONTINUE
+
+roll dice and assign sum
+set point to die Sum
+if 7 or 11 then WIN
+if 2,3,12 then lose
+otherwise CONTINUE
+
+
+while game status is continue
+  roll dice and assign to Sum
+  if sum is point then set WIN status
+  else if sum is 7 set LOSE status
+  else status is CONTINUE

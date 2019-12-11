@@ -1,0 +1,68 @@
+GradeBook(const std::string &, const std::array &);
+use list initializer to set courseName to the name provided
+use list initializer to set the grades array to 2nd argument provided
+
+displayMessage
+displays:
+  Welcome to the grade book for
+  <course name>
+
+getAverage
+  sums up the grades and divides by the number of grades
+
+  loops through the array, summing the entries
+  return the value of the sum divided by gradeBookLen - 1, since we are ignoring the 0th element
+
+getMaximum
+  set the maximum grade to 0, which is the lowers
+  loop through the elements, and assign each higher grade to the getMaximum.
+  looping through the grades,
+    if the current element is higher that the maxium then set it to the getMaximum
+
+getMinimum
+  same conceptually as getMaximum
+
+getCourseName
+  return the course namespace
+
+setCourseName
+  set the coursename without length checking, as done in previous examples
+
+processGrades
+  display a header for the processGrades
+  skip a line
+  display "Student ##: " followed by the corresponding grade padded 3 spaces
+  skip a line
+  display class average, lowest grade, and highest grade respectively on separate lines
+  skip a lines
+  display the grade distribution using astersks
+-------------------------------------------------------
+processGrades
+  display "The grades are:"
+  skip a line
+  loop through the grades.size() starting at 1
+    display "Student " & setw(2) & counter variable, colon, setw(4) and the corresponding grade
+  skip a line
+  display "Class average is " << call class average func
+  display "Lowest grade is ",
+  display "Highest grade is "
+  skip a lines
+  output bar chart
+---------------------------------
+outputBarChart
+-The bar chart displays counts for intervals
+-There are there are 10 intervals and one perfect score count
+-need to loop through the scores and increment each interval accordingly
+-we loop through the array of intervals and display then as a bar chart
+
+initialize an 11 element array of frequencies to 0
+loop through the scores
+  get the integer part of the score divided by 10 and increment this index of the frequency array.
+
+loop through the size of the array of frequencies
+  print the intervals 0-9, 10-19, etc.
+    print 0-9 explicitly
+    print 10-19, 20-29, ..., 90-99 using an algorithm
+    print 100 by itself
+
+  loop from zero to the value of the array index's value and print *'s'
