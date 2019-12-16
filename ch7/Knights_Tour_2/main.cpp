@@ -52,8 +52,8 @@ int main()
   cout << "Current row: " << currRow << "\nCurrent col: " << currCol << "\nMovement counter: " << movementCounter << endl;
   gameBoard[currRow][currCol] = movementCounter;
   possibleMovements = determinePossibleMovements();
-  cout << "Number of possible movements: " << possibleMovements << endl << endl;
-  printPossibleMovements();
+  //cout << "Number of possible movements: " << possibleMovements << endl << endl;
+  //printPossibleMovements();
 
   while(possibleMovements != 0){
     int min_index = smallestAccessibilityIndex();
@@ -63,10 +63,10 @@ int main()
     ++movementCounter;
     gameBoard[currRow][currCol] = movementCounter;
     //cout << "Movement counter incremented to " << movementCounter << " and assigned to the game board at coords [" << currRow << "," << currCol << "]" << endl;
-    cout << "[" << currRow << "," << currCol << "] = " << movementCounter << endl;
+    //cout << "[" << currRow << "," << currCol << "] = " << movementCounter << endl;
     possibleMovements = determinePossibleMovements();
-    printPossibleMovements();
-    cout <<  endl;
+    //printPossibleMovements();
+    //cout <<  endl;
   }
 
   //print gameBoard
