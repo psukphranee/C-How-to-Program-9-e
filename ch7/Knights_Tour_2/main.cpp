@@ -1,6 +1,8 @@
 #include <iostream>
 #include <iomanip>
 #include <array>
+#include <random>
+#include <ctime>
 using namespace std;
 
 //global Variables
@@ -27,6 +29,9 @@ int inBounds(int, int);
 int determinePossibleMovements();
 int smallestAccessibilityIndex();
 void printPossibleMovements();
+
+//Random engine
+default_random_engine engine(static_cast<unsigned int>(time(0)));
 
 int main()
 {
@@ -138,6 +143,7 @@ int determinePossibleMovements()
   return possibleMovements;
 }
 
+/*
 int smallestAccessibilityIndex(){
   //cout << "Determining index with smallest accessibility number...\n";
   //loop through row 0 of coordPossibleMovements
@@ -151,6 +157,40 @@ int smallestAccessibilityIndex(){
   }
   //cout << "...lowest accessibility number of " << min << " at index " << min_index << endl;
   return min_index;
+}
+*/
+//Commenting out smallestAccessibilityIndex() above and replacing it with a dynamic one which randomly selects a move when there's more than one move with the same lowest accessibility index
+
+int smallestAccessibilityIndex()
+{
+  //create 3 integer vectors corresponding to the 3 rows of coordPossibleMovements
+  vector<int> indices = {};
+  vector<int> row = {};
+  vector<int> col = {};
+
+  int min_val = 8;
+  int min_index = 0;
+
+  //first find the minimum accessibility values
+  for(int i = 0; i < maxMoves; ++i){
+    if((coordPossibleMovements[0][i] <= min_val) && (coordPossibleMovements[0][i] > 0)){
+      min_val = coordPossibleMovements[0][i];
+    }
+  }
+
+  //loop througgh the coordPossibleMovements to find all accessibility values equal to min_val
+  for(int i = 0; i < maxMoves; ++i){
+    if(coordPossibleMovements[0][i] == min_val){
+      indices.push_back(i);
+      row.push_back(coordPossibleMovements[1][i]);
+      col.push_back(coordPossibleMovements[2][i]);
+    }
+  }
+
+  const int upper_limit = indices.size() - 1;
+  uniform_int_distribution<unsigned int> randInt(0, upper_limit);
+
+  return indices[randInt(engine)];
 }
 
 int inBounds(int row, int col)
