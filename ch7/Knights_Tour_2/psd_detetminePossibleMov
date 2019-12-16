@@ -1,0 +1,21 @@
+determinePossibleMovements
+  determine possible movements. take in a coordinate.
+  calculate 8 surrounding corrdinates.
+  filter the ones in bounds.
+  filter out ones that have been traversed.
+
+Revision 1
+  an initial row and initial column is given
+  loop through the horizontal and vertical arrays
+    populate the coordPossibleMovements with the sum of current coords and horizontal/vertical values (row 1 and row 2)
+  mark the coordinates in bounds by populating row 0 with a 1 for the corresponding coordinates
+  mark the coordinates that have been traversed by changing the 1 to 0 for the corresponding coordinates
+
+Revision 2
+  initalize initial row and column
+  let row 1 of coordPossibleMovements be row coords
+      row 2 be column coords
+  loop i_counter from 0 to 7 (8 movements)
+    let
+        coordPossibleMovements[1][i_counter] (row coords) +=      horizontal[i_counter]
+        coordPossibleMovements[2][i_counter] (col coords) += vertical[i_counter]

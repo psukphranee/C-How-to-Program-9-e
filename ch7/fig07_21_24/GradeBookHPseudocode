@@ -1,0 +1,22 @@
+GradeBook Class:
+-stores data for 10 students
+-each student 4 exams
+-course title
+
+Public:
+size_t student_count
+size_t exam_count
+
+constructor
+setCourseName
+getCourseName
+getMinimumScore
+getMaximumScore
+getAverage
+displayMessage
+outputBarChart
+outputGrades
+
+Private:
+course name
+2D array of grades

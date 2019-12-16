@@ -1,0 +1,58 @@
+getMinimumScore()
+initialize minimum to 100
+loop through scores and replace minimum with any lower score
+return minimum
+
+initialize minimum to 100
+loop through rows
+  loop through columns
+    if the current element is less than minimum then set it otherwise nothing
+return minimum
+=============================================
+getAverage(row)
+initialize an integer sum to zero
+loop through the elements and update the sum
+return a double of the sum divided by the exam number
+=============================================
+outputGrades
+display grades in tabular format
+-------------------------
+display "The grades are:\n\n"
+display headers: blank, test_i, average
+display "Student 1" << setw(8) << score1 << setw(8) << score2 << ... << average with width 9
+-------------------------
+display "The grades are:\n\n"
+display 10 spaces, test1 to test 3, and average
+loop through grades array, couter i starting at 0
+  display "Student" i+1
+  loop through row i of the grades array, using counter j
+  display each grade
+
+  display the average of the row
+  display a newline
+--------------------------
+display "The grades are:\n\n"
+display 10 spaces, test1 to test 3, and average
+loop through grades array, counter i starting at 0
+  display "Student ", with padding 2 then i+1
+  loop through row i of the grades array, using counter j
+  display each grade[i][j] with width 8
+
+  display the value of function average with the argument, row i
+  display a newline
+=============================================
+outputBarChart
+Display "Overall grade distribution:\n"
+count the frequency of each score
+display a bar chart of the frequency
+---------------------------
+Display "Overall grade distribution:\n"
+initialize an 11 element frequency array, 11 to account for the edges of inner of each gradeIntervals
+loop through all items
+  increment the frequency element at score divded by 10
+
+loop through frequency array starting at 0
+  explicitly display 0-9 and 100 because of offset
+  use an algorithm for the rest;
+  loop from 0 to the frequency at i
+    output an asterisk
