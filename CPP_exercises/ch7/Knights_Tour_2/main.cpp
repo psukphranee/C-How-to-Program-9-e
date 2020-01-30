@@ -37,6 +37,7 @@ int main()
 {
   populateHeuristicGrid();
   //print heuristicGrid
+  /*
   cout << "Heuristic Grid:\n";
   for(int i = 0; i < gridSize; ++i){
     for(int j = 0; j < gridSize; ++j){
@@ -45,10 +46,14 @@ int main()
     cout << endl;
   }
   cout << "--------------------------\n";
+  */
+
+  cout << "Enter initial row and column [0,7]: ";
+  cin >> currRow >> currCol;
 
   //set initial row and column (start @ 0)
-  currRow = 3;
-  currCol = 4;
+  //currRow = 3;
+  //currCol = 4;
   cout << "Current row: " << currRow << "\nCurrent col: " << currCol << "\nMovement counter: " << movementCounter << endl;
   gameBoard[currRow][currCol] = movementCounter;
   possibleMovements = determinePossibleMovements();

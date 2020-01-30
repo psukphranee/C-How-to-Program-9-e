@@ -1,0 +1,17 @@
+OPERATION CODE
+  I/O Operations
+    10 - read from keyboard into specific location in memory
+    11 - write a word from specific location in memory to the screen
+  Load/Store
+    20 - Load a word from a specific location in memory into the accumulator
+    21 - Store a word from the accumulator to a specific location in memory
+  Arithmetic Operations
+    30 - Add a word from specific location in memory into the accumulator and leave result in accumulator
+    31 - Subtract ""
+    32 - Divide
+    33 - Multiply
+  Control Operations
+    40 - Branch to specific location in memory
+    41 - Branch to specific location in memory if accumulator is negative
+    42 - Branch to specific location in memory if accumulator is 0
+    43 - Halt, program has completed its task
