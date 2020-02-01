@@ -1,3 +1,12 @@
+/*
+Two game board arrays are created. This first is the heuristic and the second is the
+is the board we traverse using the heuristic as a guide for its movements. The starting
+position is randomly selected. Starting from this random position, we traverse the board
+using the heuristic grid values as a guide to determine what next move to make. We continue
+traversing the board until we land at a position where there are no more possible moves.
+Each move is labeled with a counter. The starting position is labeled 0.
+*/
+
 #include <iostream>
 #include <iomanip>
 #include <array>
