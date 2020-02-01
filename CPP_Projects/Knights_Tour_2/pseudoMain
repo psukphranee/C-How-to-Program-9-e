@@ -1,0 +1,13 @@
+while the possible movemnets isn't 0
+  find index of the first smallest accessibility number
+  move to that number
+  increment the move counter
+  mark that coordinate on the gameboard with the move counter number
+  determine possible movements
+=======================================================================
+while the possible movemnets isn't 0
+  -call a function to return the smallest index of the coordPossibleMovements array
+  -update current row and current column to the corresponding coordinates
+  -increment the move counter
+  -let gameBoard @ update coordinates equal the move counter
+  determine possible movements

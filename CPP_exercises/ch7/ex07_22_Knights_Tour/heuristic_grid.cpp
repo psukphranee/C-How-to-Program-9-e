@@ -3,7 +3,12 @@
 #include <iomanip>
 using namespace std;
 
-//create global movements
+/*The two arrays below will be index in pairs. The pair of numbers
+correpond to how many spaces the Knight positions the night piece moves horizonatally
+and vertically. For example, 
+(horizontal[0], vertical[0]) = (2, -1) 
+is one of the eight possible moves (indexed 0-7).  
+*/
 array<int, 8> horizontal = {2,1,-1,-2,-2,-1,1,2};
 array<int, 8> vertical = {-1,-2,-2,-1,1,2,2,1};
 

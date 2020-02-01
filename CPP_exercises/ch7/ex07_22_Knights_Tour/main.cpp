@@ -3,11 +3,6 @@
 #include <iomanip>
 using namespace std;
 
-#include <iostream>
-#include <array>
-#include <iomanip>
-using namespace std;
-
 //create global movements array
 array<int, 8> horizontal = {2,1,-1,-2,-2,-1,1,2};
 array<int, 8> vertical = {-1,-2,-2,-1,1,2,2,1};
