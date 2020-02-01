@@ -1,8 +1,8 @@
 # Simpletron Machine Language
 
-The content below introduces the problem at hand. I created an interpreter for the Simpletron Machine Language. **main.cpp** contains the code for this interpreter. It used a predefined program to test its functionality.
+The content below introduces the problem at hand. I created an interpreter for the Simpletron Machine Language. **main.cpp** contains the code for the core of the interpreter. It uses a predefined program to test its functionality.
 
-**main2.cpp** is a revision of **main.cpp** that takes instructions from user input and executes those commands. The revision outputs a memory dump at the end of the program.
+**main2.cpp** is a revision of **main.cpp** that takes instructions from user input and executes those commands. The revision also includes code that outputs a memory dump at the end of the program.
 
 ## Introduction
 
