@@ -1,0 +1,49 @@
+initialize variables
+load program into memory and execute the program sequentially
+exit the program when either halt command is encountered or end of memory
+-------------------------------------------------------------------------
+Initialize Variables:
+  100 blocks of integer memory initialized to 0000
+  Initialize array of instructions
+
+Program:
+  Read first instruction
+  Determine its operation code and memory location
+  while the operation code isn't halt
+    execute the instruction
+    read next instruction if possible
+-------------------------------------------------------------------------
+Initialize Variables:
+  int array of size 100, initialize to zeros (memory array)
+  int array of instruction, size declared implicitly
+  int accumulator
+  int operation_code
+  int memOffset
+  int instructionOffset to zero
+
+  int * memoryPtr to first block of memory array
+  int * instructionPtr
+
+Program:
+  copy instructions into memory
+  instructionPtr is memory[0] + instruction offSet
+  pass the instructionPtr, operation_code, memOffset by reference to a function to assign operation_code, memOffset its values
+
+  while the operation_code is not 43
+    if the code is 10,11
+      call IO function, passing value of memoryPtr
+      if ++instructionOffset > 99, set operation_code to 43
+    else if 20, 21
+      call loadStore function with address of accumulator and memoryPtr
+      if ++instructionOffset > 99, set operation_code to 43
+    else if 30-33
+      call Arithmetic function with address of accumulator and value of memoryPtr
+      if ++instructionOffset > 99, set operation_code to 43
+    else if 40-42
+      let instructionOffset = return value of Branching function (accumulator value, memOffset)
+    else if 43
+      break
+
+    instructionPtr is memory[0] + instruction offSet
+    pass the instructionPtr, operation_code, memOffset by reference to a function to assign operation_code, memOffset its values
+-------------------------------------------------------------------------
