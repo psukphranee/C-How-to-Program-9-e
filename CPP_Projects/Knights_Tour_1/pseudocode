@@ -1,0 +1,36 @@
+Moving functions
+  There are 8 possible L-shaped moves. Each move is a linear combination of (1,2) horizontal steps and (2,1) vertical steps.
+  We'll put the moves into a 2D array.
+
+  The 8 possible moves will correspond to indices 0-7. Refer to page 330.
+
+Heuristic Grid
+  Loop through the 8x8 grid.
+    For each element, find the 8 coordinates corresponding to the 8 possible knight moves.
+      Loop through each of the 8 pairs of possible coordinates and count the ones that are within the chess board boundaries.
+      i.e. both the horizontal and vertical indices are between 0 and 7 inclusive.
+      sum up the count and set this value to the hueristic grid.
+
+===================================================
+Starting at some position,
+  list out the possible moves
+  sort them in order of accessibility, in ascending order. we want to move towards lower numbered grids
+  move to the lowest valued grid thats possible
+    label the grid moved to with the move count
+  keep going until we reach a grid where there are no more possible movements
+
+  =================================================
+  Need to spearate the heuristic labeling part out of the possibleMoves function.
+  heuristicLabel() should call possible moves.
+
+  heuristicLabel assigns a number to each coordinate
+  loop through all of the coordinates in the 8x8 grid
+    find the coordinates of the resulting 8 moves
+    filter out ones that are in the grid boundary
+    count them
+    label the coordinate with this count
+
+  possibleMoves function takes an array and fills it with coordinates
+  resulting from the 8 types of moves.
+
+  
