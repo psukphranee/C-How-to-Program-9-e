@@ -72,6 +72,6 @@ const int halt = 43; Halt—the program has completed its task.
 The SML program below reads two numbers from the keyboard, then determines and
 displays the larger value. Note the use of the instruction +4107 as a conditional transfer of control,
 much the same as C++’s if statement.
-<p align=center>
-![Sample Program 1](sample_1.png)
+<p align="center">
+  <img width="460" height="300" src="sample_1.png">
 </p>
