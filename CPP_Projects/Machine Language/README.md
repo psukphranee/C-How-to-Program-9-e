@@ -4,7 +4,7 @@
 
 The **interpreter.cpp** file contains code for the Simpletron Machine Language interpreter. Functionality is tested using predefined instructions as opposed to user input.  
 
-The **main.cpp** file is a revision of **interpreter.cpp**. It receives and executes instructions from user input. At the end of program execution, a memory dump is printed to screen. 
+The **main.cpp** file is a revision of **interpreter.cpp**. It receives and executes instructions from user input. At the end of program execution, a memory dump is printed to screen.
 
 ## Introduction
 
@@ -66,3 +66,11 @@ const int branchzero = 42; Branch to a specific location in memory if the accumu
 zero.
 
 const int halt = 43; Halt—the program has completed its task.
+
+## Sample Program
+
+The SML program below reads two numbers from the keyboard, then determines and
+displays the larger value. Note the use of the instruction +4107 as a conditional transfer of control,
+much the same as C++’s if statement.
+
+![Sample Program 1](/sample_1.png)
