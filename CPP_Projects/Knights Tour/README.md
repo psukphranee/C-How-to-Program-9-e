@@ -36,19 +36,19 @@ The algorithm uses a heuristic to guide its movements. The heuristic is a grid p
 **main.cpp** creates a gameboard and heuristic board. After populating the heuristic board with the code taken from **heuristic_grid.cpp**, it prompts the user for a starting position on the gameboard. Using the heuristic grid as a guide, it traverses the board prioritizing the edge and corner positions. The starting position is labeled 0. Subsequent moves are labeled with incrementing values starting from 0. The result is printed.
 
 <pre>(base) <font color="#8AE234"><b>broncop@BroncoP</b></font>:<font color="#729FCF"><b>~/Documents/C++/CPP11/CPP_Projects/Knights Tour</b></font>$ ./a.out
-Enter initial row and column [0,7]: 4, 8
+Enter initial row and column [0,7]: 4 5
 Current row: 4
-Current col: 0
+Current col: 5
 Movement counter: 1
 Gameboard:
- 11 44 13 28  9 42 23 26
- 14 29 10 43 24 27  8 41
- 45 12  0 38 55  0 25 22
- 30 15 54 61 58 37 40  7
-  1 46 59 56 39 52 21 36
- 16 31 62 53 60 57  6 51
- 47  2 33 18 49  4 35 20
- 32 17 48  3 34 19 50  5
-62 moves.
+ 36  9 40 25 38 11 50 15
+ 41 24 37 10 51 14 27 12
+  8 35  0 39 26 55 16 49
+ 23 42  0 54  0 52 13 28
+ 34  7  0  0 56  1 48 17
+ 43 22 57  0 53  0 29  2
+  6 33 20 45  4 31 18 47
+ 21 44  5 32 19 46  3 30
+57 moves.
 (base) <font color="#8AE234"><b>broncop@BroncoP</b></font>:<font color="#729FCF"><b>~/Documents/C++/CPP11/CPP_Projects/Knights Tour</b></font>$
 </pre>
