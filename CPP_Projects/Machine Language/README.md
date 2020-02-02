@@ -75,3 +75,56 @@ much the same as C++’s if statement.
 <p align="center">
   <img width="460" height="300" src="sample_1.png">
 </p>
+
+### Sample Program Output
+
+<pre>(base) <font color="#8AE234"><b>broncop@BroncoP</b></font>:<font color="#729FCF"><b>~/Documents/C++/CPP11/CPP_Projects/Machine Language</b></font>$ ./a.out
+*** Welcome to Simpletron! ***
+
+*** Please enter your program one instruction ***
+*** (or data word) at a time. I will type the ***
+*** location number and a question mark (?).  ***
+*** You then type the word for that location. ***
+*** Tyoe the sentinel -99999 to stop entering ***
+*** your program. ***
+
+00 ? 1009
+01 ? 1010
+02 ? 2009
+03 ? 3110
+04 ? 4107
+05 ? 1109
+06 ? 4300
+07 ? 1110
+08 ? 4300
+09 ? -99999
+
+Running program...
+Enter an integer to memory location 0x7ffc4bf8d614: 4
+Enter an integer to memory location 0x7ffc4bf8d618: 6
+Loading 4 from memory 0x7ffc4bf8d614 to accumulator...Done.
+Accumulator value 4
+Subtract 6 to accumulator: 4 + 6 = -2
+0x7ffc4bf8d618 value is 6
+
+REGISTERS:
+accumulator          -0002
+instructionCounter      08
+instructionRegister  +4300
+operationCode           43
+operand                 00
+
+MEMORY:
+       0     1     2     3     4     5     6     7     8     9
+ 0 +1009 +1010 +2009 +3110 +4107 +1109 +4300 +1110 +4300 +0004
+10 +0006 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+20 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+30 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+40 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+50 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+60 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+70 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+80 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+90 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000 +0000
+
+</pre>
