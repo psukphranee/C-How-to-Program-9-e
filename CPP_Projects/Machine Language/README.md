@@ -2,9 +2,9 @@
 
 ## File Contents
 
-The **main.cpp** file contains code for the Simpletron Machine Language interpreter. The code in this file 
+The **interpreter.cpp** file contains code for the Simpletron Machine Language interpreter. Functionality is tested using predefined instructions as opposed to user input.  
 
-**main2.cpp** is a revision of **main.cpp** that takes instructions from user input and executes those commands. The revision also includes code that outputs a memory dump at the end of the program.
+The **main.cpp** file is a revision of **interpreter.cpp**. It receives and executes instructions from user input. At the end of program execution, a memory dump is printed to screen. 
 
 ## Introduction
 
