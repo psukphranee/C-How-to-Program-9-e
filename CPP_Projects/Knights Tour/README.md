@@ -33,7 +33,7 @@ The algorithm uses a heuristic to guide its movements. The heuristic is a grid p
 
 ### Algorithm
 
-**main.cpp** creates a gameboard and heuristic board. After populating the heuristic board with the code taken from **heuristic_grid.cpp**, it prompts the user for a starting position on the gameboard. Using the heuristic grid as a guide, it traverses the board prioritizing the edge and corner positions. The starting position is labeled 0. Subsequent moves are labeled with incrementing values starting from 0. The result is printed. *Note in the output, there are several 0's on the grid. The 0's not at starting position are positions not traversed. *
+**main.cpp** creates a gameboard and heuristic board. After populating the heuristic board with the code taken from **heuristic_grid.cpp**, it prompts the user for a starting position on the gameboard. Using the heuristic grid as a guide, it traverses the board prioritizing the edge and corner positions. The starting position is labeled 0. Subsequent moves are labeled with incrementing values starting from 0. The result is printed. *Note in the output, there are several 0's on the grid. The 0's not at starting position are positions not traversed.*
 
 <pre>(base) <font color="#8AE234"><b>broncop@BroncoP</b></font>:<font color="#729FCF"><b>~/Documents/C++/CPP11/CPP_Projects/Knights Tour</b></font>$ ./a.out
 Enter initial row and column [0,7]: 4 5
