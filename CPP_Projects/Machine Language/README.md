@@ -73,4 +73,4 @@ The SML program below reads two numbers from the keyboard, then determines and
 displays the larger value. Note the use of the instruction +4107 as a conditional transfer of control,
 much the same as C++’s if statement.
 
-![Sample Program 1](/sample_1.png)
+![Sample Program 1](sample_1.png)
