@@ -52,3 +52,5 @@ Gameboard:
 57 moves.
 (base) <font color="#8AE234"><b>broncop@BroncoP</b></font>:<font color="#729FCF"><b>~/Documents/C++/CPP11/CPP_Projects/Knights Tour</b></font>$
 </pre>
+
+Note in the output, there are several 0's on the grid. The 0's not at starting position are positions not traversed. 
