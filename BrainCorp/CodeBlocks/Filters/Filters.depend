@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1582862121 source:/home/broncop/Documents/C++/BrainCorp/CodeBlocks/Filters/range_filter.cpp
+	<array>
+	<iostream>
+	<iterator>
+	<vector>
+
+1582872157 source:/home/broncop/Documents/C++/BrainCorp/CodeBlocks/Filters/src/RangeFilter.cpp
+	<vector>
+	<iostream>
+	<algorithm>
+	"RangeFilter.h"
+
+1582872202 /home/broncop/Documents/C++/BrainCorp/CodeBlocks/Filters/include/RangeFilter.h
+	<vector>
+
+1582879222 source:/home/broncop/Documents/C++/BrainCorp/CodeBlocks/Filters/class_test.cpp
+	"RangeFilter.h"
+	<iostream>
+	<iterator>
+	<cstdlib>
+
