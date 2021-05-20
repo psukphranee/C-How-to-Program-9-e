@@ -1,0 +1,3 @@
+Find the poison bottle
+======================
+This is my solution in C++ to 6.10 of Cracking the Coding Interview by Gayle Laackman McDowell. I came up with the same algorithm and kept track of each bottle using an inefficient grouping scheme. This program uses the authors scheme of tracking bottles by a bit representation of their indices. 
