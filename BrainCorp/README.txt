@@ -1,2 +1,0 @@
-I placed the two filters in separate folders. Each folder has a 'main.cpp' file that demonstrates the functionality of the filter. To build, type
-"g++ *.cpp" in the directory of each filter. Then run the program by typing "./a.out". The TemporalFilter demo uses the examples from the PDF file you emailed me. The RangeFilter takes in an arbitrary number of inputs until a negative number (sentinel value) is encountered. Additional notes are in the comments.  
