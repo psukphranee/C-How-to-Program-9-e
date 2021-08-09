@@ -23,3 +23,12 @@ We index the bottles and look at their binary representations. Take all bottles 
 and add drops to a strip labeled 0. Next take all bottles with a 1 in position 1 of its binary representation and add drops onto a strip labeled 1. and so on. We send 
 all of the strips to the lab and get them back at the same time. A positive value for some strip k means that the poison bottle has a 1 in position k. We construct 
 the binary representation of the poison bottle with this info. 
+
+# Usage
+
+Compile and run from the command line
+
+```bash
+g++ Bottle.cpp poison.cpp -o output
+./output
+```
